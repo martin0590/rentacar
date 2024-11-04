@@ -17,7 +17,7 @@ const Footer = () => {
             className="object-contain"
           />
           <p className="text-base text-gray-700">
-            CarHub 2024 <br />
+            Rentacar 2024 <br />
             All rights reserved &copy;
           </p>
         </div>

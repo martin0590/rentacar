@@ -7,6 +7,8 @@ import { manufacturers } from '@/constants'
 import Image from 'next/image'
 import clsx from 'clsx'
 
+// TODO: EDITAR LA FUETEN DE LA BARRA ??
+
 const SearchManufacturer = ({ manufacturer, setManufacturer }: SearchManufacturerProps) => {
   const [query, setQuery] = useState('')
 
@@ -36,7 +38,7 @@ const SearchManufacturer = ({ manufacturer, setManufacturer }: SearchManufacture
             className={'search-manufacturer__input'}
             displayValue={(item: string) => item}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder='McLaren...'
+            placeholder='BMW'
           />
         </div>
 
