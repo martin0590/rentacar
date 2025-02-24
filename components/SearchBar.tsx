@@ -27,11 +27,8 @@ const SearchBar = () => {
     if( manufacturer === '' && model === '') {
       return alert("Please fill in the search bar")
     }
-
-    updateSearchParams(
-      model.toLowerCase(),
-      manufacturer.toLowerCase()
-    )
+    
+    updateSearchParams( model.toLowerCase(), manufacturer.toLowerCase() )
   }
 
   const updateSearchParams = (model: string, manufacturer: string) => {
@@ -51,7 +48,7 @@ const SearchBar = () => {
 
     const newPathname = `${window.location.pathname}?${searchParams.toString()}`
 
-    router.push(newPathname)
+    router.push(newPathname, {scroll: false})
   }
 
   return (
