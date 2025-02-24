@@ -8,6 +8,9 @@ export async function fetchCars(filters: FilterProps) {
     headers: {
       'x-rapidapi-key': `${process.env.RAPIDAPI_KEY}`,
       'x-rapidapi-host': 'cars-by-api-ninjas.p.rapidapi.com'
+    },
+    next: {
+      revalidate: 60 * 60 * 24,
     }
   }
 
